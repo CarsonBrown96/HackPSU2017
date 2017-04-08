@@ -1,3 +1,4 @@
 application_id = "389261b5"
 application_key = "30f88e74af75b9a5769cad6458cf9320"
 
+facebook_pat = "EAAECxaoUf2UBAKkwb4cY5N2v9wH5xa33Q5FxfrRbCF1ghY4VZBMNJWedNZBIgc7BDvgIT4NPJwyD2gKXnM5qZBue2tMPdVJiZAjRACFrPaWoidOcE4wE4vYDJlUYlZCEpvX4tZA0UGZByNuxDXbaroiqddOWex1FKqK2UP4DblWugZDZD"
