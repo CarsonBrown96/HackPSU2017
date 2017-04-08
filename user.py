@@ -1,4 +1,5 @@
 import json
+import decoder
 import os
 
 class User:
@@ -7,7 +8,7 @@ class User:
 		self.calorie_goal = calorie_goal
 
 def getUser(message):
-	return getUserInfo(getUID(message))
+	return getUserInfo(get_userid(message))
 
 def getUserInfo(id):
 	filename = 'users.json'
@@ -15,9 +16,9 @@ def getUserInfo(id):
 		data = json.load(f)
 		for user in data['users']:
 			if user['id'] == id:
-				return user['id'], user['caloriesG'], user['caloriesT']
+				return user['caloriesG'], user['caloriesT']
 		f['users'].push({"id":id, "caloriesG":"0", "caloriesT": "0"})
-		return id, "0", "0"
+		return "0", "0"
 
 def addCalories(cal, id):
 	filename = 'users.json'
