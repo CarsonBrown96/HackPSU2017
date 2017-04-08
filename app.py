@@ -8,7 +8,7 @@ import nutritionseach
 
 app = Flask(__name__)
 
-PAGE_ACCESS_TOKEN = ""
+PAGE_ACCESS_TOKEN = "EAAECxaoUf2UBAL987CccjNQxbpomeZCoPeaVCzFDKgbEUfwPhWaUmuMTGmylUiC3wXZCFbe5sNAbO5IBbl5onfftWQAPNMsUeGDpBACcKpeZAdU653TFnGSzvXIYmVLEYxNv69gTtaCTOP6azs4Sa7nPhq0WaO1LUNkbOfLPgZDZD"
 
 bot = Bot(PAGE_ACCESS_TOKEN)
 

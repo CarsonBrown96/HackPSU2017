@@ -17,8 +17,8 @@ def getUserInfo(id):
 		for user in data['users']:
 			if user['id'] == id:
 				return user['caloriesG'], user['caloriesT']
-		f['users'].push({"id":id, "caloriesG":"0", "caloriesT": "0"})
-		return "0", "0"
+		f['users'].push({"id":id, "caloriesG":"20000", "caloriesT": "0"})
+		return "2000", "0"
 
 def addCalories(cal, id):
 	filename = 'users.json'
