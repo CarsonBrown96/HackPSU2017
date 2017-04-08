@@ -1,1 +1,1 @@
-print "this is all we have"
+print ("this is all we have")
