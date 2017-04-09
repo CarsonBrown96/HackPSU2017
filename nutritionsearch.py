@@ -5,7 +5,7 @@ def split_foods(text):
     return split_text(words)
 
 def split_text(text):
-    words = text.split(',')
+    words = [x.strip() for x in text.split(',')]
     return caloric_values(words)
 
 
@@ -22,3 +22,5 @@ def caloric_values(foods):
 
 def get_meals(string):
 	return split_foods(string)
+
+print(get_meals("I ate: apple, peanut butter, bacon"))
