@@ -1,13 +1,31 @@
 import requests, json
+from stopwords import stopwords
 
 def split_foods(text):
-    words = text.split(':')[1]
-    return split_text(words)
+	phrases = text.split(",")
+	print(phrases)
+	foods = []
+	for i in range(len(phrases)):
+		words = phrases[i].split()
+		j = 0
+		while j < len(words):
+			if words[j].lower() in stopwords:
+				words.pop(j)
+			else:
+				j += 1
+		foods.append(" ".join(words))
 
-def split_text(text):
-    words = [x.strip() for x in text.split(',')]
-    print("This is string:", words)
-    return caloric_values(words)
+	print(foods)
+	return caloric_values(foods)
+
+
+# def split_foods(text):
+#     words = text.split(':')[1]
+#     return split_text(words)
+
+# def split_text(text):
+#     words = [x.strip() for x in text.split(',')]
+#     return caloric_values(words)
 
 
 

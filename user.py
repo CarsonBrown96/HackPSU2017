@@ -14,7 +14,7 @@ def getUserInfo(id):
 		for user in data['users']:
 			if user['id'] == id:
 				return user['caloriesG'], user['caloriesT']
-		a = {"id":id, "caloriesG":"20000", "caloriesT": "0"}
+		a = {"id":id, "caloriesG":"2000", "caloriesT": "0"}
 		data['users'].append(a)
 	with open(filename, 'w') as f:
 		f.write(json.dumps(data))
