@@ -1,7 +1,8 @@
 import requests, json
 
 def split_foods(text):
-    words = text.split(':',1)[1]
+    print(text)
+    words = text.split(':')[1]
     return split_text(words)
 
 def split_text(text):
@@ -24,3 +25,4 @@ def get_meals(string):
 	return split_foods(string)
 
 print(get_meals("I ate: apple, peanut butter, bacon"))
+
