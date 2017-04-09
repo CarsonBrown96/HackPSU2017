@@ -1,3 +1,2 @@
 # HackPSU2017
-Facebook nutrition chatbot that utilizes the Nutritionix API
-Intended for the Optum Challenge
+Facebook nutrition chatbot that utilizes the Nutritionix API intended for the Optum Challenge
