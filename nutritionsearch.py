@@ -5,7 +5,7 @@ def split_foods(text):
     return split_text(words)
 
 def split_text(text):
-    words = text.split(',',1)
+    words = text.split(',')
     return caloric_values(words)
 
 
