@@ -1,5 +1,13 @@
 from flask import Flask, request
+<<<<<<< Updated upstream
 import requests
+=======
+from pymessenger import Bot
+import decoder
+import response
+import split_text
+import nutritionsearch
+>>>>>>> Stashed changes
 
 app = Flask(__name__)
 
@@ -13,7 +21,6 @@ def reply(user_id, msg):
     }
     resp = requests.post("https://graph.facebook.com/v2.6/me/messages?access_token=" + ACCESS_TOKEN, json=data)
     print(resp.content)
-
 
 @app.route('/', methods=['POST'])
 def handle_incoming_messages():

@@ -1,7 +1,6 @@
 import requests, json
 
 def split_foods(text):
-    print(text)
     words = text.split(':')[1]
     return split_text(words)
 
@@ -23,6 +22,4 @@ def caloric_values(foods):
 
 def get_meals(string):
 	return split_foods(string)
-
-print(get_meals("I ate: apple, peanut butter, bacon"))
 
